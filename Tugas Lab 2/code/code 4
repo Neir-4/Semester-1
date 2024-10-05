@@ -1,0 +1,14 @@
+program suhu;
+uses crt;
+var 
+cc,reamur,fahrenheit,kelvin:real;
+begin
+    clrscr;
+    write('Masukkan suhu (celcius) : '); readln(cc);
+    reamur:=0.8*cc;
+    fahrenheit:=(1.8*cc)+32;
+    kelvin:=cc+273;
+    writeln('Suhu dalam Reamur : ',reamur:2:0,' derajat');
+    writeln('Suhu dalam Fahrenheit : ',fahrenheit:2:0,' derajat');
+    writeln('Suhu dalam Kelvin : ',kelvin:2:0, ' derajat');
+end.
