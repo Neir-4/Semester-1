@@ -1,0 +1,17 @@
+
+program tahunkabisat;
+uses crt;
+var 
+tahun:integer;
+begin
+   clrscr;
+   write('Masukkan Tahun Lahir Anda : '); readln(tahun);
+   if (tahun mod 4 = 0) then
+   begin
+      writeln('Anda Lahir Pada Tahun Kabisat :)');
+   end
+   else
+   begin
+      writeln('Anda tidak lahir pada tahun kabisat :(');
+   end;
+end.
