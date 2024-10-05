@@ -1,0 +1,41 @@
+
+program kondisi2;
+uses crt;
+var
+makan:integer; 
+beli:integer;
+harga,total:longint;
+begin
+    clrscr;
+    writeln('Menu Makanan Restoran :');
+    writeln('1.Nasi Goreng (Rp 15.000)');
+    writeln('2.Nasi Uduk (Rp 10.000)');
+    writeln('3.Mie Goreng (Rp 15.000)');
+    writeln('4.Mie Kuah (Rp 10.000)');
+    writeln('5.Ayam Penyet (Rp 20.000)');
+    writeln('6.Ayam Mentega (Rp 25.000)');
+    writeln('7.Ayam Geprek (Rp 20.000)');
+    writeln('8.Lele Bakar (Rp 20.000)');
+    writeln('9.Sate Kerang (Rp 15.000)');
+    writeln('10.Soto Ayam (Rp 20.000)');
+    writeln('Silakan Pesan (Tulis nomor menu saja) :) : '); readln(makan);
+    case (makan) of
+        1: harga:=15000;
+        2: harga:=10000;
+        3: harga:=15000;
+        4: harga:=10000;
+        5: harga:=20000;
+        6: harga:=25000;
+        7: harga:=20000;
+        8: harga:=20000;
+        9: harga:=15000;
+        10: harga:=20000;
+    else
+        begin
+            write('Makanan tidak tersedia');
+        end;
+    end;
+    write('Beli berapa? : '); readln(beli);
+    total :=harga*beli;
+    write('Total Pesanan Anda Adalah : ',total);
+end.
