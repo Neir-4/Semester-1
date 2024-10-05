@@ -1,0 +1,14 @@
+
+program lapangan;
+uses crt;
+var 
+panjang,lebar,keliling,luas:real;
+begin
+    clrscr;
+    write('Masukkan Panjang Lapangan Sepak Bola (meter) : '); readln(panjang);
+    write('Masukkan Lebar Lapangan Sepak Bola (meter) : '); readln(lebar);
+    luas:=panjang*lebar;
+    keliling:=(2*panjang)+(2*lebar);
+    writeln('Luas Lapangan Sepak Bola : ',luas:5:2,' meter');
+    writeln('Keliling Lapangan Sepak Bola : ',keliling:5:2,' meter');
+end.
