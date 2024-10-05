@@ -1,0 +1,18 @@
+
+program nilaimhs;
+uses crt;
+var 
+aktif,tugas,ujian,maktif,mtugas,mujian,nakhir:real;
+nama:string;
+begin
+    clrscr;
+    write('Masukkan Nama Lengkap Anda : '); readln(nama);
+    write('Masukkan Nilai Keaktifan Anda : '); readln(aktif);
+    write('Masukkan Nilai Tugas Anda : '); readln(tugas);
+    write('Masukkan Nilai Ujian Anda : '); readln(ujian);
+    maktif:=aktif*0.2;
+    mtugas:=tugas*0.35;
+    mujian:=ujian*0.45;
+    nakhir:=maktif+mtugas+mujian;
+    write('Halo, ',nama,', Nilai akhir Anda adalah : ',nakhir:5:2);
+end.
