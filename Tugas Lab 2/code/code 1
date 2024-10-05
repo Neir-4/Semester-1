@@ -1,0 +1,19 @@
+
+program code1;
+uses crt;
+var 
+nama:string;
+gajip,gajit,gajil,pogaji:longint;
+lembur,tdkkerja:integer;
+begin
+    clrscr;
+    writeln('Halo, Selamat datang karyawan PT. Berjaya Abadi');
+    write('Masukkan Nama Anda : '); readln(nama);
+    write('Masukkan Gaji Pokok (Tanpa Titik) : '); readln(gajip);
+    write('Masukkan Banyak hari lembur (Hari) : '); readln(lembur);
+    write('Masukkan Banyak Hari tidak bekerja (Hari) : '); readln(tdkkerja);
+    gajil:=150000*lembur;
+    pogaji:=30000*tdkkerja;
+    gajit:=gajip+gajil-pogaji;
+    write('Halo, ',nama, ', Total Gaji anda sebesar :Rp ',gajit);
+end.
