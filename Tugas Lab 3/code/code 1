@@ -1,0 +1,35 @@
+
+program tkondisi;
+uses crt;
+var 
+a,b,c:integer;
+begin
+    clrscr;
+    write('Masukkan Bilangan 1 : '); readln(a);
+    write('Masukkan Bilangan 2 : '); readln(b);
+    write('Masukkan Bilangan 3 : '); readln(c);
+    if (a>b) and (b>c) then
+    begin
+        write('Urutan : ',a,' ',b,' ',c);
+    end
+    else if (a>c) and (c>b) then
+    begin
+        write('Urutan : ',a,' ',c,' ',b);
+    end
+    else if (b>a) and (a>c) then
+    begin
+       write('Urutan : ',b,' ',a,' ',c);
+    end 
+    else if (b>c) and (c>a) then
+    begin
+       write('Urutan : ',b,' ',c,' ',a); 
+    end
+    else if (c>b) and (b>a) then
+    begin
+       write('Urutan : ',c,' ',b,' ',a); 
+    end
+    else if (c>a) and (a>b) then
+    begin
+        write('Urutan : ',c,' ',a,' ',b);
+    end;
+end.
