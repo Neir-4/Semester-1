@@ -1,0 +1,20 @@
+program lab3_2;
+uses crt;
+var a,i:integer;
+begin
+    clrscr;
+    for i:= 0 to 5 do 
+    begin
+        if i mod 2 = 1 then
+        begin
+            for a:=  1 to i do //perulangan selain genap
+            write('* ');
+        end
+        else 
+        begin
+            for a:=1 to i do //perulangan untuk genap
+            write(i,' '); 
+        end;
+    writeln;//biar ga bocor bosku
+    end
+end.
