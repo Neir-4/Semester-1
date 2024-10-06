@@ -1,9 +1,10 @@
 program lab3_2;
 uses crt;
-var a,i:integer;
+var a,i,n:integer;
 begin
     clrscr;
-    for i:= 0 to 5 do 
+    write('Masukkan Nilai n: '); readln(n);
+    for i:= 0 to n do 
     begin
         if i mod 2 = 1 then
         begin
