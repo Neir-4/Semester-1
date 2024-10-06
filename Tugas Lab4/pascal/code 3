@@ -1,0 +1,27 @@
+program lab4_3;
+uses crt;
+
+var 
+i,a,b,n: integer;
+
+begin
+    clrscr;
+    write('Masukkan nilai n: '); readln(n);//masukan
+    for i:= 1 to n do //sisi atas
+    begin 
+        for a:= i to n do
+        write (' ');//spasi
+        for b:= 1 to (2*i-1) do
+        write('*');//bintang
+        writeln;
+    end;
+    for i:= n-1 downto 1 do //sisi bawah
+    begin 
+        for a:= n downto i do
+        write (' ');//spasi
+        for b:= 1 to (2*i-1) do
+        write('*');//bintang
+        writeln;
+    end;
+end.
+{aku ga pake spasi bintangnya kak ,kalo bintang nya pake spasi jadinya ga simetris kak , hehe :)}    
